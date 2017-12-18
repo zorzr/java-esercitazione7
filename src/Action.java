@@ -47,6 +47,10 @@ public class Action implements ActionListener {
                     if (label.length() > 20)   break;
                     p.Text().setText(label.concat(t));
                     break;
+                case ".":
+                    if (label.contains(t))   break;
+                    p.Text().setText(label.concat(t));
+                    break;
                 case "+":
                 case "-":
                 case "*":
