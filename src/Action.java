@@ -105,6 +105,7 @@ public class Action implements ActionListener {
     }
     
     private String delete (String label) {
+        if (label.length() == 1)   return "0";
         int l = label.length();
         return label.substring(0, l-1);
     }
